@@ -31,6 +31,9 @@ video {
   display: inline-block;
   vertical-align: baseline; }
 
+.mt-35 {
+  margin-top: 35px !important; }
+
 #bg-home {
   background: url(../images/ttt.jpg);
   background-size: cover;
@@ -52,5 +55,23 @@ video {
       #bg-home .overlay .btn-start a {
         color: #FFED30;
         font-weight: 600; }
+
+#bg-players {
+  background-color: #212121;
+  width: 100%;
+  height: 100vh; }
+  #bg-players .names-players {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; }
+    #bg-players .names-players .name-one {
+      color: #FFE254;
+      font-weight: 600;
+      font-size: 21px; }
+    #bg-players .names-players .name-two {
+      color: #E3696E;
+      font-weight: 600;
+      font-size: 21px; }
 
 /*# sourceMappingURL=style.css.map */

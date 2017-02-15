@@ -30,8 +30,13 @@ audio,
 canvas,
 progress,
 video {
+
   display: inline-block;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
+.mt-35 {
+  margin-top: 35px !important;
+}
 
 #bg-home {
   background: url(../images/ttt.jpg);
@@ -57,5 +62,27 @@ video {
       }
     }
   }
+}
 
+#bg-players {
+  background-color: #212121;
+  width: 100%;
+  height: 100vh;
+  .names-players {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .name-one {
+      color: #FFE254;
+      font-weight: 600;
+      font-size: 21px;
+    }
+    .name-two {
+      color: #E3696E;
+      font-weight: 600;
+      font-size: 21px;
+
+    }
+  }
 }
