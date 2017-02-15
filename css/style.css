@@ -1,0 +1,56 @@
+/*
+  Global styles
+*/
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+#bg-home {
+  background: url(../images/ttt.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+  #bg-home .overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%; }
+    #bg-home .overlay .btn-start {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #bg-home .overlay .btn-start a {
+        color: #FFED30;
+        font-weight: 600; }
+
+/*# sourceMappingURL=style.css.map */
