@@ -15,15 +15,18 @@
     <section id="bg-players">
       <div class="container names-players">
         <div class="row">
-          <form class="col l12 s12">
+          <form class="col l12 s12" name="form">
             <div class="row">
               <div class="input-field col s12 l5">
-                <input id="icon_prefix" type="text" class="validate name-one">
+                <input id="player-one" type="text" class="validate name-one" name="input-one">
                 <label for="icon_prefix">First Player</label>
               </div>
               <div class="input-field col s12 l5 offset-l1">
-                <input id="icon_prefix" type="text" class="validate name-two">
+                <input id="player-two" type="text" class="validate name-two" name="input-two">
                 <label for="icon_prefix">Second Player</label>
+              </div>
+              <div class="center">
+                <a class="waves-effect waves-light btn mt-35" id="start-game" onclick="required()"> Empezar <span>&#10145;</span></a>
               </div>
             </div>
           </form>
@@ -32,6 +35,7 @@
     </section>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 
 
   </body>

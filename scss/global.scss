@@ -3,6 +3,8 @@
   Global styles
 */
 
+$d-c: 270px/3;
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -83,6 +85,108 @@ video {
       font-weight: 600;
       font-size: 21px;
 
+    }
+  }
+}
+
+// GAME
+
+#bg-game {
+  background-color: #212121;
+  width: 100%;
+  height: 100vh;
+  .container {
+    padding: 70px 0;
+    .row {
+      margin-bottom: 70px;
+    }
+    .box-one {
+      border-radius: 3px;
+      padding: 7px;
+      background-color: #FFE254;
+      color: #212121;
+      overflow: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      h4 {
+        float: left;
+        display: inline-block;
+      }
+      .point {
+        display: inline-block;
+      }
+    }
+    .box-two {
+      border-radius: 3px;
+      padding: 7px;
+      background-color: #E3696E;
+      color: #212121;
+      overflow: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      h4 {
+        float: left;
+        display: inline-block;
+      }
+      .point {
+        display: inline-block;
+      }
+    }
+    .content {
+      position: relative;
+      margin: auto;
+      width: 270px;
+      height: 270px;
+    }
+    .square {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      float: left;
+      width: $d-c;
+      height: $d-c;
+      z-index: 999;
+      transition: 0.3s ease;
+    }
+    .x {
+      font-size: 70px;
+      color: #FFE254;
+    }
+    .o {
+      font-size: 70px;
+      color: #E3696E;
+    }
+    .l {
+        position: absolute;
+        width: 8px;
+        height: 0%;
+        transition: 0.3s ease 0.4s;
+        transform-origin: top;
+        z-index: 999;
+    }
+    .square-v {
+        position: absolute;
+        height: 270px;
+        width: $d-c;
+        top: 0;
+        left: $d-c;
+        border: 0;
+        border-left: 2px solid #424242;
+        border-right: 2px solid #424242;
+        border-radius: 1px;
+    }
+    .square-h {
+        position: absolute;
+        height: $d-c;
+        width: 270px;
+        top: $d-c;
+        border: 0;
+        border-top: 2px solid #424242;
+        border-bottom: 2px solid #424242;
+        border-radius: 1px;
     }
   }
 }
