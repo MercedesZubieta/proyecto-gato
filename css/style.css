@@ -44,6 +44,23 @@ video {
 .mb-0 {
   margin-bottom: 0px !important; }
 
+header .menu {
+  text-align: right;
+  text-align: right;
+  padding: 21px 21px;
+  margin-bottom: 35px; }
+  header .menu a {
+    font-size: 21px;
+    color: #26a69a; }
+    header .menu a:hover {
+      color: #EF5151;
+      -webkit-transition: 1s;
+      /* Safari */
+      transition: 1s; }
+  header .menu .separador {
+    font-size: 16px;
+    color: white; }
+
 #bg-home {
   background: url(../images/ttt.jpg);
   background-size: cover;
@@ -87,93 +104,91 @@ video {
 #bg-game {
   background-color: #212121;
   width: 100%;
-  height: 100vh; }
-  #bg-game .container {
-    padding: 70px 0; }
-    #bg-game .container .row {
-      margin-bottom: 70px; }
-    #bg-game .container .box-one {
-      border-radius: 3px;
-      padding: 7px;
-      background-color: #FFE254;
-      color: #212121;
-      overflow: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-around; }
-      #bg-game .container .box-one h4 {
-        float: left;
-        display: inline-block; }
-      #bg-game .container .box-one .point {
-        display: inline-block; }
-    #bg-game .container .box-two {
-      border-radius: 3px;
-      padding: 7px;
-      background-color: #E3696E;
-      color: #212121;
-      overflow: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-around; }
-      #bg-game .container .box-two h4 {
-        float: left;
-        display: inline-block; }
-      #bg-game .container .box-two .point {
-        display: inline-block; }
-    #bg-game .container .content {
-      position: relative;
-      margin: auto;
-      width: 270px;
-      height: 270px; }
-    #bg-game .container .square {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  min-height: 100vh; }
+  #bg-game .container .row {
+    margin-bottom: 70px; }
+  #bg-game .container .box-one {
+    border-radius: 3px;
+    padding: 7px;
+    background-color: #FFE254;
+    color: #212121;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    #bg-game .container .box-one h4 {
       float: left;
-      width: 90px;
-      height: 90px;
-      z-index: 999;
-      transition: 0.3s ease; }
-    #bg-game .container .x {
-      font-size: 70px;
-      color: #FFE254; }
-    #bg-game .container .o {
-      font-size: 70px;
-      color: #E3696E; }
-    #bg-game .container .l {
-      position: absolute;
-      width: 8px;
-      height: 0%;
-      transition: 0.3s ease 0.4s;
-      transform-origin: top;
-      z-index: 999; }
-    #bg-game .container .square-v {
-      position: absolute;
-      height: 270px;
-      width: 90px;
-      top: 0;
-      left: 90px;
-      border: 0;
-      border-left: 2px solid #424242;
-      border-right: 2px solid #424242;
-      border-radius: 1px; }
-    #bg-game .container .square-h {
-      position: absolute;
-      height: 90px;
-      width: 270px;
-      top: 90px;
-      border: 0;
-      border-top: 2px solid #424242;
-      border-bottom: 2px solid #424242;
-      border-radius: 1px; }
-    #bg-game .container .text-win {
-      color: white; }
-    #bg-game .container #player-a, #bg-game .container #player-b {
-      font-weight: 300;
-      text-transform: capitalize; }
-    #bg-game .container .hidden {
-      display: none; }
+      display: inline-block; }
+    #bg-game .container .box-one .point {
+      display: inline-block; }
+  #bg-game .container .box-two {
+    border-radius: 3px;
+    padding: 7px;
+    background-color: #E3696E;
+    color: #212121;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    #bg-game .container .box-two h4 {
+      float: left;
+      display: inline-block; }
+    #bg-game .container .box-two .point {
+      display: inline-block; }
+  #bg-game .container .content {
+    position: relative;
+    margin: auto;
+    width: 270px;
+    height: 270px; }
+  #bg-game .container .square {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 90px;
+    height: 90px;
+    z-index: 999;
+    transition: 0.3s ease; }
+  #bg-game .container .x {
+    font-size: 70px;
+    color: #FFE254; }
+  #bg-game .container .o {
+    font-size: 70px;
+    color: #E3696E; }
+  #bg-game .container .l {
+    position: absolute;
+    width: 8px;
+    height: 0%;
+    transition: 0.3s ease 0.4s;
+    transform-origin: top;
+    z-index: 999; }
+  #bg-game .container .square-v {
+    position: absolute;
+    height: 270px;
+    width: 90px;
+    top: 0;
+    left: 90px;
+    border: 0;
+    border-left: 2px solid #424242;
+    border-right: 2px solid #424242;
+    border-radius: 1px; }
+  #bg-game .container .square-h {
+    position: absolute;
+    height: 90px;
+    width: 270px;
+    top: 90px;
+    border: 0;
+    border-top: 2px solid #424242;
+    border-bottom: 2px solid #424242;
+    border-radius: 1px; }
+  #bg-game .container .text-win {
+    color: white; }
+  #bg-game .container #player-a, #bg-game .container #player-b {
+    font-weight: 300;
+    text-transform: capitalize; }
+  #bg-game .container .hidden {
+    display: none; }
 
 #bg-history {
   background-color: #212121;
