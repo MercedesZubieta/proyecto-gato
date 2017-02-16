@@ -211,9 +211,8 @@ header .menu {
   #bg-game .container #player-a, #bg-game .container #player-b {
     font-weight: 300;
     text-transform: capitalize; }
-
-.hidden {
-  display: none; }
+  #bg-game .container .hidden {
+    display: none; }
 
 #bg-history {
   background-color: #212121;
@@ -228,5 +227,9 @@ header .menu {
 
 .text-b {
   color: #E3696E; }
+
+@media only screen and (max-device-width: 480px) {
+  .hidden-xs {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

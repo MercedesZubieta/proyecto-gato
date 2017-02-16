@@ -251,11 +251,10 @@ header{
       font-weight: 300;
       text-transform: capitalize;
     }
+    .hidden {
+      display: none;
+    }
   }
-}
-
-.hidden {
-  display: none;
 }
 
 // Historial
@@ -274,4 +273,10 @@ header{
 
 .text-b {
   color: #E3696E;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .hidden-xs {
+    display: none;
+  }
 }
