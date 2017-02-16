@@ -1,5 +1,4 @@
 // Validate form
-
 function required(){
   var nameOne = document.forms["form"]["input-one"].value;
   var nameTwo = document.forms["form"]["input-two"].value;
