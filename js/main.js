@@ -24,8 +24,8 @@ $(document).ready(function(){
 
 // Game
 var square = document.getElementsByClassName("square");
-var x = "<span class='x'>&#8339;</span>";
-var o = "<span class='o'>&#8338;</span>";
+var x = "<span class='x'>X</span>";
+var o = "<span class='o'>O</span>";
 var f = false;
 var contador = 0;
 var contador1 = 0;
