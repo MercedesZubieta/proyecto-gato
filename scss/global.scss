@@ -8,10 +8,13 @@ $d-c: 270px/3;
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%; }
+  -webkit-text-size-adjust: 100%;
+}
 
 body {
-  margin: 0; }
+  margin: 0;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
 
 article,
 aside,
@@ -26,7 +29,8 @@ menu,
 nav,
 section,
 summary {
-  display: block; }
+  display: block;
+}
 
 audio,
 canvas,
@@ -36,9 +40,27 @@ video {
   display: inline-block;
   vertical-align: baseline;
 }
+
+// REUTILIZABLE
+
 .mt-35 {
   margin-top: 35px !important;
 }
+
+.text-white {
+  color: white;
+}
+
+.mt-0 {
+  margin-top: 0px !important;
+}
+
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+
+
+// ------
 
 #bg-home {
   background: url(../images/ttt.jpg);
@@ -191,8 +213,30 @@ video {
     .text-win {
       color: white;
     }
+    #player-a, #player-b {
+      font-weight: 300;
+      text-transform: capitalize;
+    }
     .hidden {
       display: none;
     }
   }
+}
+
+// Historial
+#bg-history {
+  background-color: #212121;
+  width: 100%;
+  min-height: 100%;
+  .box-history {
+    border-bottom: 1px solid #fff;
+    padding: 14px;
+  }
+}
+.text-a {
+  color: #FFE254;
+}
+
+.text-b {
+  color: #E3696E;
 }

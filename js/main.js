@@ -57,3 +57,7 @@ for(i = 0; i < square.length; i++){
     }
   }
 }
+
+// HISTORIAL
+document.getElementById("name-a").innerHTML = localStorage.getItem("jugador-A");
+document.getElementById("name-b").innerHTML = localStorage.getItem("jugador-B");
