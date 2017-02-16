@@ -78,7 +78,13 @@ header .menu {
       height: 100%;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      display: -webkit-flex;
+      /* Safari */
+      -webkit-align-items: center;
+      /* Safari 7.0+ */
+      justify-content: center;
+      -webkit-justify-content: center;
+      /* Safari 6.1+ */ }
       #bg-home .overlay .btn-start a {
         color: #FFED30;
         font-weight: 600; }
@@ -91,6 +97,8 @@ header .menu {
     display: flex;
     align-items: center;
     justify-content: center;
+    -webkit-justify-content: center;
+    /* Safari 6.1+ */
     height: 100vh; }
     #bg-players .names-players .name-one {
       color: #FFE254;
@@ -115,7 +123,12 @@ header .menu {
     overflow: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around; }
+    display: -webkit-flex;
+    /* Safari */
+    -webkit-align-items: center;
+    /* Safari 7.0+ */
+    justify-content: space-around;
+    -webkit-justify-content: space-around; }
     #bg-game .container .box-one h4 {
       float: left;
       display: inline-block; }
@@ -129,7 +142,12 @@ header .menu {
     overflow: auto;
     display: flex;
     align-items: center;
-    justify-content: space-around; }
+    display: -webkit-flex;
+    /* Safari */
+    -webkit-align-items: center;
+    /* Safari 7.0+ */
+    justify-content: space-around;
+    -webkit-justify-content: space-around; }
     #bg-game .container .box-two h4 {
       float: left;
       display: inline-block; }
@@ -144,7 +162,13 @@ header .menu {
     position: relative;
     display: flex;
     align-items: center;
+    display: -webkit-flex;
+    /* Safari */
+    -webkit-align-items: center;
+    /* Safari 7.0+ */
     justify-content: center;
+    -webkit-justify-content: center;
+    /* Safari 6.1+ */
     float: left;
     width: 90px;
     height: 90px;
