@@ -48,15 +48,21 @@ for(i = 0; i < square.length; i++){
       var jugador2 = localStorage.getItem("jugador-B");
       if($("#one").children().hasClass("o") && $("#two").children().hasClass("o") && $("#three").children().hasClass("o") || $("#four").children().hasClass("o") && $("#five").children().hasClass("o") && $("#six").children().hasClass("o") || $("#seven").children().hasClass("o") && $("#eight").children().hasClass("o") && $("#nine").children().hasClass("o") || $("#one").children().hasClass("o") && $("#four").children().hasClass("o") && $("#seven").children().hasClass("o") || $("#two").children().hasClass("o") && $("#five").children().hasClass("o") && $("#eight").children().hasClass("o") || $("#three").children().hasClass("o") && $("#six").children().hasClass("o") && $("#nine").children().hasClass("o") || $("#one").children().hasClass("o") && $("#five").children().hasClass("o") && $("#nine").children().hasClass("o") || $("#three").children().hasClass("o") && $("#five").children().hasClass("o") && $("#seven").children().hasClass("o")){
         $('#box-resultado').removeClass("hidden");
-        document.getElementById("name-win").innerHTML = localStorage.getItem("jugador-B");
+        localStorage.setItem("ganador",jugador2);
+        document.getElementById("name-win").innerHTML = localStorage.getItem("ganador");
       }else if($("#one").children().hasClass("x") && $("#two").children().hasClass("x") && $("#three").children().hasClass("x") || $("#four").children().hasClass("x") && $("#five").children().hasClass("x") && $("#six").children().hasClass("x") || $("#seven").children().hasClass("x") && $("#eight").children().hasClass("x") && $("#nine").children().hasClass("x") || $("#one").children().hasClass("x") && $("#four").children().hasClass("x") && $("#seven").children().hasClass("x") || $("#two").children().hasClass("x") && $("#five").children().hasClass("x") && $("#eight").children().hasClass("x") || $("#three").children().hasClass("x") && $("#six").children().hasClass("x") && $("#nine").children().hasClass("x") || $("#one").children().hasClass("x") && $("#five").children().hasClass("x") && $("#nine").children().hasClass("x") || $("#three").children().hasClass("x") && $("#five").children().hasClass("x") && $("#seven").children().hasClass("x")){
         $('#box-resultado').removeClass("hidden");
-        document.getElementById("name-win").innerHTML = localStorage.getItem("jugador-A");
+        localStorage.setItem("ganador",jugador1);
+        document.getElementById("name-win").innerHTML = localStorage.getItem("ganador");
       }
     }
   }
 }
 
 // HISTORIAL
-document.getElementById("name-a").innerHTML = localStorage.getItem("jugador-A");
-document.getElementById("name-b").innerHTML = localStorage.getItem("jugador-B");
+$("historial.html").ready(function(){
+  document.getElementById("name-a").innerHTML = localStorage.getItem("jugador-A");
+  document.getElementById("name-b").innerHTML = localStorage.getItem("jugador-B");
+  document.getElementById("name-win").innerHTML = localStorage.getItem("ganador");
+
+})
