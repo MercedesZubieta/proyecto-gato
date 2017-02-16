@@ -211,8 +211,9 @@ header .menu {
   #bg-game .container #player-a, #bg-game .container #player-b {
     font-weight: 300;
     text-transform: capitalize; }
-  #bg-game .container .hidden {
-    display: none; }
+
+.hidden {
+  display: none; }
 
 #bg-history {
   background-color: #212121;
